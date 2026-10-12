@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:historical-source-research:literature-record",
+  "title": "Literature Record (discovery companion, separate from archival evidence)",
+  "type": "object",
+  "required": [
+    "literature_id",
+    "title",
+    "author",
+    "year",
+    "publication",
+    "research_question",
+    "method",
+    "findings",
+    "primary_source_leads",
+    "verification_status",
+    "url",
+    "claim_ids",
+    "notes"
+  ],
+  "properties": {
+    "literature_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "year": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "research_question": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "method": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "findings": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_source_leads": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "unverified",
+        "search_lead",
+        "metadata_only",
+        "abstract_checked",
+        "fulltext_verified"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

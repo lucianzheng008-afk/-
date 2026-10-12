@@ -1,0 +1,4 @@
+interface:
+  display_name: "Historical Source Researcher"
+  short_description: "历史史料检索与考证，交付可查读的史料与文献矩阵、时间线和命题证据图"
+  default_prompt: "使用 $historical-source-research 研究1971—1972年中美关系缓和期间领导人决策过程，检索并核验史料，直接交付可筛选的HTML页面、史料与文献矩阵、时间线和命题证据图。"
